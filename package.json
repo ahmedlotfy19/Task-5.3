@@ -27,14 +27,3 @@
   }
 }
 ```[cite: 3, 6, 7]
-
-4. **Commit the changes:** Scroll down and click **Commit changes...** to save the file. 
-
-*Verification:* Once committed, go to the **Actions** tab to watch your test workflow run cleanly without syntax or parsing errors.
-
----
-
-<ElicitationsGroup message="If you run into issues or need further help:">
-  <Elicitation label="Still getting JSON error" query="My package.json still shows a syntax error after pasting. What should I check?"/>
-  <Elicitation label="Check workflow action" query="How do I check if my GitHub Actions workflow is running correctly?"/>
-</ElicitationsGroup>
