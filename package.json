@@ -14,7 +14,7 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
-    "@babel/jest": "^30.0.0",
+    "babel-jest": "^30.0.0",
     "concurrently": "^8.2.2",
     "jest": "^30.5.2",
     "jest-environment-jsdom": "^30.0.0",
@@ -26,4 +26,3 @@
     "@parcel/watcher@2.6.0": true
   }
 }
-
