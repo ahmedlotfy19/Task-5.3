@@ -1,28 +1,15 @@
-{
-  "name": "task-3-lostfound",
-  "private": true,
-  "workspaces": [
-    "server",
-    "client"
-  ],
-  "type": "module",
-  "scripts": {
-    "install:all": "npm --workspaces install",
-    "dev": "concurrently -n server,client -c blue,magenta \"npm:dev --workspace server\" \"npm:dev --workspace client\"",
-    "test": "jest"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "babel-jest": "^30.0.0",
-    "concurrently": "^8.2.2",
-    "jest": "^30.5.2",
-    "jest-environment-jsdom": "^30.0.0",
-    "mongodb-memory-server": "^11.3.0",
-    "supertest": "^7.0.0"
-  },
-  "allowScripts": {
-    "mongodb-memory-server@11.3.0": true,
-    "@parcel/watcher@2.6.0": true
-  }
+"scripts": {
+  "install:all": "npm --workspaces install",
+  "dev": "concurrently -n server,client -c blue,magenta \"npm:dev --workspace server\" \"npm:dev --workspace client\"",
+  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
 }
+```[cite: 7]
+
+*Verification:* Save your file, and run `npm test` locally or push to GitHub to confirm that the test script executes without throwing the ESM error.
+
+---
+
+<ElicitationsGroup message="If you run into issues or need further help:">
+  <Elicitation label="Show full updated package.json" query="Can you show me the complete updated package.json code block?"/>
+  <Elicitation label="GitHub Actions workflow file" query="How should my ci.yml workflow file look for GitHub Actions?"/>
+</ElicitationsGroup>
